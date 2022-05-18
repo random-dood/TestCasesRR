@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="MSEdge Tests Suite" verbose="1">
+
+	<test name="MSEdge Tests">
+		<parameter name="browser" value="msedge"></parameter>
+		<classes>
+			<class name="com.midterm.demo.MidTermDemo">
+				<methods>
+                   <!-- <exclude name="timeOutTest"></exclude> -->
+                   <!--     <include name="noSuchElementTest"></include> -->
+                   <!--    <include name="staleElementTest"></include> -->
+                         <include name="generalTest"></include>
+				</methods>
+			</class>
+		</classes>
+	</test>
+
+</suite>
